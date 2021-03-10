@@ -12,11 +12,16 @@ body > *:first-child {
 body > *:last-child {
   margin-bottom: 0 !important; }
 
+/*E01931
+FF8286
+00CED1
+7B68EE
+*/
 a {
-  color: #E01931; 
+  color: #6495ED; 
 text-decoration: none;}
 a:hover {
-  color: #FF8286; }
+  color: #FF6347; }
 a.absent {
   color: #cc0000; }
 a.anchor {
@@ -106,6 +111,9 @@ body > h1:first-child {
 body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
   margin-top: 0;
   padding-top: 0; }
+
+nav {
+  color: 6495ED;}
 
 a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
   margin-top: 0;
