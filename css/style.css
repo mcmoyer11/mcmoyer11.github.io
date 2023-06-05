@@ -18,12 +18,13 @@ FF8286
 7B68EE
 7B68EE
 cc0000
+800080
 */
 a {
   color: #6495ED; 
 text-decoration: none;}
 a:hover {
-  color: #FF6347; }
+  color: #800080; }
 a.absent {
   color: #7B68EE; }
 a.anchor {
