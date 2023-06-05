@@ -16,6 +16,8 @@ body > *:last-child {
 FF8286
 00CED1
 7B68EE
+7B68EE
+cc0000
 */
 a {
   color: #6495ED; 
@@ -23,7 +25,7 @@ text-decoration: none;}
 a:hover {
   color: #FF6347; }
 a.absent {
-  color: #cc0000; }
+  color: #7B68EE; }
 a.anchor {
   display: block;
   padding-left: 30px;
