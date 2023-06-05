@@ -21,12 +21,12 @@ cc0000
 800080
 */
 a {
-  color: #6495ED; 
+  color: #7B68EE; 
 text-decoration: none;}
 a:hover {
   color: #800080; }
 a.absent {
-  color: #7B68EE; }
+  color: ##6495ED; }
 a.anchor {
   display: block;
   padding-left: 30px;
