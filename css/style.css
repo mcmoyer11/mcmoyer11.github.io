@@ -24,9 +24,10 @@ a {
   color: #7B68EE; 
 text-decoration: none;}
 a:hover {
-  color: #800080; }
+  background-color: #6624f8;
+  color: #24e4f8; }
 a.absent {
-  color: ##6495ED; }
+  color: #6495ED; }
 a.anchor {
   display: block;
   padding-left: 30px;
