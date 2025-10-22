@@ -1,11 +1,12 @@
 body {
   font-family: Helvetica, serif;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.6;
   padding-top: 30px;
   padding-bottom: 10px;
   background-color: white;
-  padding-left: 10px; }
+  /*padding-left: 10px; */
+}
 
 body > *:first-child {
   margin-top: 0 !important; }
@@ -37,6 +38,22 @@ a.anchor {
   top: 0;
   left: 0;
   bottom: 0; }
+
+h0 {
+  font-size: 55px;
+  color: black; 
+  font-weight:bold;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+/*h00 {
+  font-size: 15px;
+  color: black; 
+  font-weight:bold;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}*/
 
 h1, h2, h3, h4, h5, h6 {
   margin: 20px 0 10px;
@@ -332,6 +349,23 @@ kbd {
 }
 
 nav a {
-        margin-right: 10px;
-        font-size: 18px;
+        margin-right: 20px;
+        font-size: 20px;
+        /*font-weight: bold;*/
     }
+
+
+/* Wrap both the div and p in a flex container */
+.container {
+  display: flex;
+  align-items: flex-start; /* aligns tops */
+}
+
+.container div {
+  margin-right: 20px; /* space between the name and paragraph */
+}
+
+div.name {
+  float: left;
+  margin-right: 20px;
+}
