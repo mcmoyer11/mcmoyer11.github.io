@@ -20,6 +20,8 @@ FF8286
 7B68EE
 cc0000
 800080
+24e4f8
+0ab6d8
 */
 a {
   color: #7B68EE; 
@@ -41,7 +43,7 @@ a.anchor {
 
 h0 {
   font-size: 55px;
-  color: black; 
+  color: #F54927; 
   font-weight:bold;
   writing-mode: vertical-rl;
   text-orientation: upright;
@@ -103,7 +105,8 @@ border-bottom: 1px solid #cccccc;
   color: black;}
 
 h5 {
-  font-size: 14px; }
+  font-size: 14px; 
+  color: #F54927; }
 
 h6 {
   color: #777777;
@@ -352,6 +355,7 @@ nav a {
         margin-right: 20px;
         font-size: 20px;
         /*font-weight: bold;*/
+        color: #F54927;
     }
 
 
