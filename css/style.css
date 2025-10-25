@@ -381,3 +381,37 @@ div.name {
 .spacer {
   margin-top: 2rem;
 }
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle; /* keeps icons aligned with text */
+  line-height: 1.6; /* 1.0 = normal, 1.5–1.8 is comfortable */
+}
+
+.contact-list li.office {
+  margin-bottom: 0.5em;
+}
+
+.contact-list li.office .label {
+  display: inline-block;
+  width: 5em; /* this sets the “tab” width before the address */
+  font-weight: bold; /* optional, makes "Office:" stand out */
+}
+
+.contact-list li.office .address-text {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+address {
+  font-style: normal;
+  line-height: 1.6;
+  padding: 10px 0;
+}
