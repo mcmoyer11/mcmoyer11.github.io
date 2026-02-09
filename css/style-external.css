@@ -21,16 +21,13 @@ body > *:last-child {
 
 /* Links */
 a {
-  color: #7B68EE;
-  text-decoration: none;
-}
+  color: #7B68EE; 
+text-decoration: none;}
 a:hover {
   background-color: #6624f8;
-  color: #24e4f8;
-}
+  color: #24e4f8; }
 a.absent {
-  color: #6495ED;
-}
+  color: #6495ED; }
 a.anchor {
   display: block;
   padding-left: 30px;
@@ -39,11 +36,67 @@ a.anchor {
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
-}
+  bottom: 0; }
+
+
+h1 {
+  font-size: 40px;
+  color: #F54927; }
+
+h2 {
+  font-size: 30px;
+  /*border-bottom: 1px solid #cccccc;*/
+  color: #F54927; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; 
+border-bottom: 1px solid #cccccc;
+  color: #F54927;}
+
+h5 {
+  font-size: 14px; 
+  color: #F54927; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
 
 
 .spacer {
   margin-top: 2rem;
 }
 
+.linespacer {
+  margin-top: .2rem;
+}
+
+
+
+.details-summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 30px;
+  color: #7B68EE;
+  list-style: none; /* removes default marker */
+}
+
+/* caret before text */
+.details-summary::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: 0.5em;
+  transition: transform 0.2s ease;
+}
+
+/* rotate when open */
+details[open] .details-summary::before {
+  transform: rotate(90deg);
+}
+
+/* remove browser marker (Safari/Chrome) */
+.details-summary::-webkit-details-marker {
+  display: none;
+}

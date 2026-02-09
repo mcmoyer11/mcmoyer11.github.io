@@ -1,11 +1,13 @@
 .schedule-table {
-  width: 800px;
+  width: 600px;
   table-layout: fixed;
   border-collapse: collapse;
+    margin-left: 32px; /* extra indent relative to body text */
+
 }
 
 .schedule-table td {
-  padding: 12px;
+  padding: 10px;
   vertical-align: top;
 }
 
