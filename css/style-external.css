@@ -101,3 +101,11 @@ details[open] .details-summary::before {
 .details-summary::-webkit-details-marker {
   display: none;
 }
+
+
+.labs-image {
+  display: block;
+  margin: 0 auto;
+  width: 600px;   /* or whatever size you chose */
+  height: auto;
+}
