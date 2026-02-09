@@ -8,10 +8,17 @@
 
 .schedule-table td {
   padding: 10px;
-  vertical-align: top;
+  vertical-align: center;
+  horizontal-align: center;
 }
 
 .schedule-table td:first-child {
   width: 120px;
   font-weight: bold;
+}
+
+.schedule-table .highlight-text {
+  color: #F54927; /* dark red example */
+  font-weight: bold;
+
 }
