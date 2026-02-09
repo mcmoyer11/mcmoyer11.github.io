@@ -102,10 +102,11 @@ details[open] .details-summary::before {
   display: none;
 }
 
-
-.labs-image {
+.footer-image {
   display: block;
-  margin: 0 auto;
-  width: 600px;   /* or whatever size you chose */
-  height: auto;
+  margin: 2rem auto 0 auto; /* top margin + center */
+  width: 400px;             /* exact width you want */
+  max-width: 100%;          /* ensures it never overflows container */
+  height: auto;             /* keep aspect ratio */
 }
+
