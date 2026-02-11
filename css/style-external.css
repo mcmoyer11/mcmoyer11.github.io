@@ -54,7 +54,7 @@ h3 {
 
 h4 {
   font-size: 16px; 
-border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
   color: #F54927;}
 
 h5 {
@@ -73,8 +73,6 @@ h6 {
 .linespacer {
   margin-top: .2rem;
 }
-
-
 
 .details-summary {
   cursor: pointer;
@@ -110,3 +108,12 @@ details[open] .details-summary::before {
   height: auto;             /* keep aspect ratio */
 }
 
+.footer-text {
+  display: block;
+  font-size: 10px;
+  text-align: center;
+  margin: 2rem auto 0 auto; /* top margin + center */
+  width: 1000px;             /* exact width you want */
+  max-width: 100%;          /* ensures it never overflows container */
+  height: auto;             /* keep aspect ratio */
+}
