@@ -209,3 +209,51 @@ address {
   object-fit: cover;   /* or 'contain' if you prefer no cropping */
   display: block;
 }
+
+/*
+#7B68EE
+*/
+.details-summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  color: #F54927;
+  list-style: none; /* removes default marker */
+}
+
+/* caret before text */
+.details-summary::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: 0.5em;
+  transition: transform 0.2s ease;
+}
+
+/* rotate when open */
+details[open] .details-summary::before {
+  transform: rotate(90deg);
+}
+
+/* remove browser marker (Safari/Chrome) */
+.details-summary::-webkit-details-marker {
+  display: none;
+}
+
+.publications-table {
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+}
+.publications-table td {
+  border: none;
+  padding: 8px 0;
+  vertical-align: top;
+}
+.publications-table .year {
+  width: 80px;
+  font-weight: bold;
+  color: #666;
+}
+.publications-table .citation {
+  padding-left: 20px;
+}
