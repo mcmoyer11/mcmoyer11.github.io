@@ -4,9 +4,12 @@ body {
   font-size: 16px;
   color: white;
   line-height: 1.6;
-  padding-left: 20px;
+  max-width: 1200px;           /* Sets content width */
+  margin: 0 auto;             /* Centers horizontally */
+  padding: 30px 20px 10px;    /* Top/right/bottom/left padding */
+/*  padding-left: 20px;
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 10px;*/
   background-color: #242424;
   text-align: left;
 }
@@ -212,6 +215,7 @@ address {
 
 /*
 #7B68EE
+#F54927
 */
 .details-summary {
   cursor: pointer;
@@ -220,13 +224,29 @@ address {
   color: #F54927;
   list-style: none; /* removes default marker */
 }
+.star-rating::before {
+  content: "✭ ";  /* or "\272D" */
+}
 
+.star-bullet::before {
+  content: "⛤";     /* Pentagram ✯ → ⛤ */
+}
+
+/*&#10029;
+#7B68EE
+*/
 /* caret before text */
 .details-summary::before {
-  content: "▸";
+  content: "⛤";
+  font-size: 30px;
+  color: #91d0ba;
   display: inline-block;
   margin-right: 0.5em;
   transition: transform 0.2s ease;
+}
+
+.details-summary:hover::before {
+  transform: scale(1.2) rotate(10deg);
 }
 
 /* rotate when open */
