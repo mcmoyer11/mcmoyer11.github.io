@@ -350,3 +350,71 @@ details[open] .details-summary::before {
   }
 }
 
+
+/*Contact grid*/
+.contact-wrapper {
+  display: flex;
+  align-items: center;   /* top-align image and list */
+  gap: 20px;
+   min-height: 250;         /* match image height so contact list can center */                 /* space between image and contact info */
+}
+
+.contact-photo {
+  flex-shrink: 0;            /* keep the image from shrinking too much */
+  width: 250;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Optional: stack on small screens */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-photo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*Image grid*/
+.image-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* centers both divs horizontally */
+  gap: 1rem;              /* nice spacing between sections */
+}
+
+.cezi-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;  /* centers the two-column layout */
+  gap: 10px;
+  align-items: flex-start;  /* top-aligns images in each row */
+}
+
+.cezi-grid img {
+  flex: 0 0 auto;           /* don't grow/shrink images */
+}
+
+.chester-image {
+  display: flex;
+  justify-content: center; /* centers the wide chester image */
+}
+
+/* Mobile: stack everything */
+@media (max-width: 768px) {
+  .image-gallery {
+    align-items: stretch;  /* full width on mobile */
+  }
+  
+  .cezi-grid img,
+  .chester-image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
