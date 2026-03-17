@@ -16,17 +16,22 @@
 
 <body>
 
-<div align="right">
-	<nav>
-		<a href="../index.html">Home</a>
-		<!-- <a href="research.html">Research</a> -->
-		<a href="publications.html">Communications</a>
-		<a href="teaching.html">Teaching</a>
-		<a href="misc.html">Miscellanea</a>
-		<a href="contact.html"><strong style="color: #F54927;">Contact</strong></a>
-	</nav>
-
+<div>
+  <nav class="site-nav">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+      ☰ Menu
+    </button>
+    <div id="nav-links" class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="publications.html">Communications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="misc.html">Miscellanea</a>
+      <a href="contact.html"><strong style="color: #F54927;">Contact</strong></a>
+    </div>
+  </nav>
 </div>
+
+
 
 <div class="spacer"></div>
 
@@ -34,25 +39,25 @@
   <address>
     <ul class="contact-list">
       <li>
-        <img src="../images/email.png" alt="Email icon"> morgancolleen.moyer\@\upf\.\edu
+        <img src="../images/email-light.jpg" alt="Email icon"> morgancolleen.moyer\at\upf\dot\edu
       </li>
       <li>
-        <img src="../images/email.png" alt="Email icon"> mcmoyer11(@)protonmail(.)com
+        <img src="../images/email-light.jpg" alt="Email icon"> mcmoyer11(at)protonmail(dot)com
       </li>
       <li>
-        <img src="../images/gh.png" alt="GitHub logo">
+        <img src="../images/gh-light.jpg" alt="GitHub logo">
         <a href="https://github.com/mcmoyer11/">
           mcmoyer11
         </a>
       </li>
       <li>
-        <img src="../images/linkedin.png" alt="linkedin" class="small-icon">
+        <img src="../images/linkedin-light.png" alt="linkedin" class="small-icon">
         <a href="https://www.linkedin.com/in/morgan-moyer-741904250/">
          morgan-moyer
         </a>
       </li>
       <li>
-        <img src="../images/orcid.png" alt="orcid">
+        <img src="../images/orcid-light.png" alt="orcid">
         <a href="https://orcid.org/0000-0003-3544-2792">
          0000-0003-3544-2792
         </a>
@@ -100,6 +105,19 @@
   ga('send', 'pageview');
 
 </script>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+
+    if (btn && links) {
+      btn.addEventListener('click', () => {
+        const isOpen = links.classList.toggle('open');
+        btn.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+
 
 </body>
 

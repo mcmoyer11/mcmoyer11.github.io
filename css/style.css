@@ -278,3 +278,75 @@ details[open] .details-summary::before {
 .publications-table .citation {
   padding-left: 20px;
 }
+
+
+/* Mobile layout: stack content and clear floats */
+@media (max-width: 768px) {
+  .container {
+    display: block;         /* stack children vertically */
+  }
+
+  .container div,
+  div.name {
+    float: none;            /* remove float on small screens */
+    margin-right: 0;
+    width: 100%;            /* full width for text and images */
+  }
+
+  body {
+    padding: 20px 10px;     /* a bit tighter padding on mobile */
+  }
+}
+
+
+.site-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* reuse your existing link styles */
+.site-nav a {
+  margin-right: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #91d0ba;
+}
+
+.nav-toggle {
+  display: none; /* hidden on desktop */
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .site-nav {
+    justify-content: space-between;
+  }
+
+  .nav-toggle {
+    display: inline-block;
+    background: none;
+    border: 1px solid #91d0ba;
+    color: #91d0ba;
+    padding: 6px 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}
+

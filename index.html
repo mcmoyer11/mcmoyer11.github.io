@@ -15,34 +15,32 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   </head>
 
-<!--   <style>
-    body {
-      font-size: 16px;
-    }
-  </style> -->
-
   <body>
 
 
-  <!-- <div style="display: flex; align-items: center; gap: 20px;"> -->
-
-  <div align="right">
-  <nav>
+<div>
+  <nav class="site-nav">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+      ☰ Menu
+    </button>
+    <div id="nav-links" class="nav-links">
       <a href="index.html"><strong style="color: #F54927;">Home</strong></a>
-      <!-- <a href="pages/research.html">Research</a> -->
       <a href="pages/publications.html">Communications</a>
       <a href="pages/teaching.html">Teaching</a>
       <a href="pages/misc.html">Miscellanea</a>
       <a href="pages/contact.html">Contact</a>
+    </div>
   </nav>
-  </div>
+</div>
+
 
   <div class="spacer"></div>
 
   <div class="container" >
 
     <div>
-          <h0 id="name" style="white-space: nowrap;">MORGAN MOYER</h0>
+
+          <h0 id="name" style="white-space: nowrap;">MORGAN &#x1F349 MOYER</h0>
     </div>
 
     <div class="spacer"></div>
@@ -113,6 +111,20 @@
     ga('send', 'pageview');
 
   </script>
+
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+
+    if (btn && links) {
+      btn.addEventListener('click', () => {
+        const isOpen = links.classList.toggle('open');
+        btn.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+
 
   </body>
 
