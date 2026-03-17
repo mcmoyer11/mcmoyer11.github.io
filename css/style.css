@@ -2,7 +2,7 @@ body {
   /*font-family: Helvetica, serif;*/
   /*font-family: Helvetica, serif;*/
   font-size: 16px;
-  color: white;
+  color: black;
   line-height: 1.6;
   max-width: 1200px;           /* Sets content width */
   margin: 0 auto;             /* Centers horizontally */
@@ -10,7 +10,8 @@ body {
 /*  padding-left: 20px;
   padding-top: 30px;
   padding-bottom: 10px;*/
-  background-color: #242424;
+  /* #242424*/
+  /*background-color: #D3D3D3; */
   text-align: left;
 }
 
