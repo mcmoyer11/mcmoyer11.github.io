@@ -1,15 +1,30 @@
 /* Body defaults */
 body {
   font-family: Helvetica, serif;
-  font-size: 18px;
+  /*font-size: 18px;*/
   color: black;
-  line-height: 1.2;
-  padding-top: 30px;
+  /*line-height: 1.2;*/
+  padding-top: 30px;/*
   padding-bottom: 10px;
   padding-left: 40px;
-  padding-right: 40px;
+  padding-right: 40px;*/
   background-color: white;
   text-align: left; /* force left alignment */
+
+  font-size: 16px;
+  color: black;
+  line-height: 1.6;
+  max-width: 800px;           /* Sets content width */
+  margin: 0 auto;             /* Centers horizontally */
+  padding: 30px 20px 10px;    /* Top/right/bottom/left padding */
+/*  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;*/
+  /* #242424*/
+  /*background-color: #D3D3D3; */
+  text-align: left;
+
+
 }
 
 /* Ensure first/last children margins */
@@ -77,7 +92,7 @@ h6 {
 .details-summary {
   cursor: pointer;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
   color: #7B68EE;
   list-style: none; /* removes default marker */
 }
