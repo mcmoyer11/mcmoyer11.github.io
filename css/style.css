@@ -361,8 +361,8 @@ details[open] .details-summary::before {
 
 .contact-photo {
   flex-shrink: 0;            /* keep the image from shrinking too much */
-  width: 250;
-  height: 250px;
+  width: 150;
+  height: 300px;
   object-fit: cover;
 }
 
